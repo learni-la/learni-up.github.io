@@ -533,6 +533,33 @@ footer .learni span {
     letter-spacing: 2px;
 }
 
+footer .contact {
+    float: right;
+}
+
+footer .contact li {
+    display: inline-block;
+}
+
+footer .social-media .fb svg {
+    width: 35px;
+    /* background-color: #fff; */
+    border-radius: 5px;
+}
+
+footer .social-media .ig svg {
+    width: 35px;
+    /* background-color: #fff; */
+    border-radius: 5px;    
+}
+
+footer .social-media .yt svg {
+    width: 35px;
+    /* background-color: #fff; */
+    border-radius: 5px;   
+    margin-right: 70px; 
+}
+
 @media only screen and (max-width: 800px) {
     footer .info h3 {
         font-size: .65rem;
