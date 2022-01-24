@@ -1,0 +1,68 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Space Mono', monospace; */
+
+/* h1 {
+    color: #2e295a; blue
+    color: #60b4a4; green
+} */
+
+/* universal style */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+
+html {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; 
+}
+
+.container {
+    padding: 5px 70px;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        padding: 7px 40px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .container {
+        padding: 3px 7px;
+    }
+}
+
+.content {
+    margin-top: 10px;
+    font-size: 12px;
+}
