@@ -70,3 +70,7 @@ body {
     margin-top: 10px;
     font-size: 12px;
 }
+
+a, li, p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif Lao', serif;
+}
