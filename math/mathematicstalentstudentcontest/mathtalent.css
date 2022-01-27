@@ -376,6 +376,12 @@ main h3 {
     margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 800px) {
+    main .home {
+        margin-top: -320px;
+    }
+}
+
 @media only screen and (max-width: 501px) {
     main .home {
         margin-top: -325px;
