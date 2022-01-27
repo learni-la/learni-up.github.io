@@ -15,6 +15,10 @@ font-family: 'Space Mono', monospace; */
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Noto Serif Lao', serif;
+}
+
 a {
     text-decoration: none;
 }
