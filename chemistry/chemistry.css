@@ -85,8 +85,8 @@ header nav a:not(:last-child) {
     border-bottom: 2px solid transparent;
 }
 
-.header-nav-right .chemistry-text li {
-    color: #13ae67;
+.header-nav-right .math-text li {
+    color: #599bea;
 }
 
 .header-nav-right li:hover {
@@ -325,7 +325,6 @@ main .home {
 }
 
 main .home h3 {
-    font-family: serif;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -405,7 +404,6 @@ footer {
     color: #fff;
     padding-top: 20px;
     padding-bottom: 40px;
-    padding-left: 5%;
 }
 
 footer .info {
@@ -457,7 +455,6 @@ footer .learni span {
     font-weight: 900;
     letter-spacing: 2px;
 }
-
 footer .contact {
     float: right;
 }
@@ -499,5 +496,6 @@ footer .social-media .yt svg {
     }
 }
 
-
-
+a, li, p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif Lao', serif;
+}
