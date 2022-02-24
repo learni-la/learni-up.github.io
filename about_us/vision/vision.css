@@ -286,7 +286,6 @@ header nav a:not(:last-child) {
 }
 
 .welcome h1 {
-    font-family: serif;
     font-weight: 900;
     text-transform: capitalize; 
     letter-spacing: 2px;
@@ -330,7 +329,6 @@ header nav a:not(:last-child) {
 
 .main-subject h2 {
     font-weight: 900;
-    font-family: serif;
     font-size: 2rem;
     margin-bottom: 1.3rem;
 }
@@ -491,7 +489,6 @@ footer {
     color: #fff;
     padding-top: 20px;
     padding-bottom: 40px;
-    padding-left: 5%;
 }
 
 footer .info {
@@ -583,4 +580,8 @@ footer .social-media .yt svg {
     footer .info li {
         line-height: 1.5;
     }
+}
+
+a, li, p, h1, h2, h3, h4, h5, h6, span {
+    font-family: 'Noto Serif Lao', serif;
 }
