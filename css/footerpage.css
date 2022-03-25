@@ -85,9 +85,9 @@ header nav a:not(:last-child) {
     border-bottom: 2px solid transparent;
 }
 
-.header-nav-right .math-text li {
+/*.header-nav-right .math-text li {
     color: #599bea;
-}
+}*/
 
 .header-nav-right li:hover {
     border-bottom: 2px solid #40397D;
@@ -281,7 +281,6 @@ header nav a:not(:last-child) {
 }
 
 .welcome h1 {
-    /* font-family: serif; */
     font-weight: 900;
     text-transform: capitalize; 
     letter-spacing: 2px;
@@ -320,20 +319,20 @@ main .home {
     box-shadow: 0 0 50px 2px rgba(0,0,0,.2);
     border-radius: 15px;
     padding: 30px;
-    margin-top: -275px;
+    /* margin-top: -275px; */
     background-color: #fff;
 }
 
 main .home h3 {
-    /* font-family: serif; */
     font-size: 2rem;
     font-weight: 900;
+    color: #000;
 }
 
 .home .sub-home {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .home .sub-home:not(:last-child) {
@@ -341,21 +340,44 @@ main .home h3 {
 }
 
 .sub-home .exam-type {
-    width: 100%;
-    box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+    width: 200px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
     margin: 5px;
     border-radius: 10px;
 }
 
-.exam-type img {
-    width: 100%;
+.exam-type .left {
+    /* width: 150px; */
+    /* height: 150px    ; */
+    padding-top: 10px;
     display: block;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left .image-box {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.exam-type img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
 }
 
 .exam-type p {
-    text-align: left;
-    padding: 5px 15px;
+    text-align: center;
+    padding: 2px 1px;
+    line-height: 1;
+    margin-top: 5px;
 }
 
 .exam-type p a {
@@ -369,22 +391,16 @@ main .home h3 {
 
 .exam-type p a:hover {
     color: #8F83F7;
-    font-size: .81rem;
+    font-size: .85rem;
 }
 
 main h3 {
     margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 800px) {
-    main .home {
-        margin-top: -320px;
-    }
-}
-
 @media only screen and (max-width: 501px) {
     main .home {
-        margin-top: -325px;
+        /* margin-top: -325px; */
     }
 }
 
@@ -395,7 +411,6 @@ footer {
     color: #fff;
     padding-top: 20px;
     padding-bottom: 40px;
-    /* padding-left: 5%; */
 }
 
 footer .info {
@@ -447,6 +462,7 @@ footer .learni span {
     font-weight: 900;
     letter-spacing: 2px;
 }
+
 footer .contact {
     float: right;
 }

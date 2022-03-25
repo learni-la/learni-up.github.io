@@ -281,6 +281,7 @@ header nav a:not(:last-child) {
 }
 
 .welcome h1 {
+    font-family: serif;
     font-weight: 900;
     text-transform: capitalize; 
     letter-spacing: 2px;
@@ -290,7 +291,7 @@ header nav a:not(:last-child) {
 @media only screen and (max-width: 800px) {
     .welcome h1 {
         font-size: 1.5rem;
-        margin-top: -25px;
+        /* margin-top: -25px; */
     }
 
     .welcome p {
@@ -319,7 +320,7 @@ main .home {
     box-shadow: 0 0 50px 2px rgba(0,0,0,.2);
     border-radius: 15px;
     padding: 30px;
-    margin-top: -250px;
+    /* margin-top: -275px; */
     background-color: #fff;
 }
 
@@ -330,8 +331,8 @@ main .home h3 {
 
 .home .sub-home {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .home .sub-home:not(:last-child) {
@@ -339,10 +340,26 @@ main .home h3 {
 }
 
 .sub-home .exam-type {
-    width: 100%;
-    box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+    width: 250px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
     margin: 5px;
     border-radius: 10px;
+}
+
+.exam-type .left {
+    width: 110px;
+    height: 150px;
+    padding: 3px;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left .image-box {
+    display: block;
+    margin: 0 auto;
 }
 
 .exam-type img {
@@ -352,8 +369,8 @@ main .home h3 {
 }
 
 .exam-type p {
-    text-align: left;
-    padding: 5px 15px;
+    text-align: center;
+    padding: 5px 1px;
 }
 
 .exam-type p a {
@@ -367,7 +384,7 @@ main .home h3 {
 
 .exam-type p a:hover {
     color: #8F83F7;
-    font-size: .81rem;
+    font-size: .85rem;
 }
 
 main h3 {
@@ -376,7 +393,7 @@ main h3 {
 
 @media only screen and (max-width: 501px) {
     main .home {
-        margin-top: -325px;
+        /* margin-top: -325px; */
     }
 }
 
@@ -482,5 +499,3 @@ footer .social-media .yt svg {
 a, li, p, h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif Lao', serif;
 }
-
-

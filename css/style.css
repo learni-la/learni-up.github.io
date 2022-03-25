@@ -320,8 +320,29 @@ header nav a:not(:last-child) {
 }
   
 /* main ================================================================================ */
+main .home {
+    box-shadow: 0 0 50px 2px rgba(0,0,0,.2);
+    border-radius: 15px;
+    padding: 30px;
+    /* margin-top: -275px; */
+    background-color: #fff;
+}
+
+main .home h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.home .sub-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home .sub-home:not(:last-child) {
+    margin-bottom: 20px;
+}   
 .main-subject {
-    margin-top: -250px;
     background-color: #fff;
     padding: 40px;
     border-radius: 15px;
@@ -403,10 +424,6 @@ main a {
 
 
 @media only screen and (max-width: 800px) {
-    main .main-subject {
-        margin-top: -300px;
-    }
-
     .subject-left {
         width: 30%;
     }
@@ -423,10 +440,6 @@ main a {
 
     main .subject {
         padding-bottom: 20px;
-    }
-
-    main .main-subject {
-        margin-top: -330px;
     }
     
     main .main-subject .subject {
@@ -575,3 +588,4 @@ footer .social-media .yt svg {
 a, li, p, h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif Lao', serif;
 }
+

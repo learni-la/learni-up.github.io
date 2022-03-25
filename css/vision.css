@@ -1,3 +1,12 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Space Mono', monospace; */
+
+/* h1 {
+    color: #2e295a; blue
+    color: #60b4a4; green
+} */
+
+/* universal style */
 * {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -83,10 +92,6 @@ header nav a:not(:last-child) {
     font-weight: 900;
     transition: border-bottom .3s ease;
     border-bottom: 2px solid transparent;
-}
-
-.header-nav-right .math-text li {
-    color: #599bea;
 }
 
 .header-nav-right li:hover {
@@ -312,73 +317,170 @@ header nav a:not(:last-child) {
         font-size: .7rem;
     }
 }
-
-/* main
-======================================================================================= */
-main .home {
-    box-shadow: 0 0 50px 2px rgba(0,0,0,.2);
-    border-radius: 15px;
-    padding: 30px;
-    margin-top: -250px;
+  
+/* main ================================================================================ */
+.main-subject {
+    /* margin-top: -250px; */
     background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px 2px rgba(0,0,0,.2);
 }
 
-main .home h3 {
+.main-subject h2 {
+    font-weight: 900;
     font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+
+.main-subject span {
     font-weight: 900;
 }
 
-.home .sub-home {
+.main-subject .subject {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
 }
 
-.home .sub-home:not(:last-child) {
-    margin-bottom: 20px;
+
+.main-subject .subject:not(:last-child) {
+    border-bottom: 1px solid #2e295a;
+    padding-bottom: 30px;
 }
 
-.sub-home .exam-type {
-    width: 100%;
-    box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
-    margin: 5px;
-    border-radius: 10px;
+.subject h2 {
+    font-family: serif; 
+    margin-bottom: 10px;
 }
 
-.exam-type img {
-    width: 100%;
+.subject-left {
+    width: 25%; 
+}
+
+.subject-left img {
+    width: 120px;
+    transition: width .5s ease;
+}
+
+.subject-left img:hover {
+    width: 130px;
+}
+
+.subject:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.subject-left img {
     display: block;
     margin: 0 auto;
 }
 
-.exam-type p {
-    text-align: left;
-    padding: 5px 15px;
+.subject-right {
+    width: 75%;
 }
 
-.exam-type p a {
-    font-size: .8rem;
-    color: #2e295a;
+main li {
+    list-style: none;
+}
+
+main a {
+    text-transform: capitalize;
     text-decoration: none;
+}
+
+.subject a {   
+    color: #2e295a;
+    font-size: .8rem;
     font-weight: 900;
     transition: color .2s ease;
-    transition: font-size.2s ease;
+    transition: font-size .2s ease;
 }
 
-.exam-type p a:hover {
+.subject a:hover {
     color: #8F83F7;
-    font-size: .81rem;
+    font-size: .825rem;
 }
 
-main h3 {
-    margin-bottom: 1rem;
+.subject .more {
+    color: #606470;
+    font-size: .7rem;
 }
 
-@media only screen and (max-width: 501px) {
-    main .home {
-        margin-top: -325px;
+.subject .more:hover {
+    color: #606470;
+    font-size: .75rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+    main .main-subject {
+        /* margin-top: -280px; */
+    }
+
+    .subject-left {
+        width: 30%;
+    }
+
+    .subject-rigth {
+        width: 70%;
     }
 }
+
+@media only screen and (max-width: 580px) {
+    main .subject {
+        margin: -40px -30px;
+    }
+
+    main .subject {
+        padding-bottom: 20px;
+    }
+
+    main .main-subject {
+        /* margin-top: -300px; */
+    }
+    
+    main .main-subject .subject {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    main .subject-left {
+        width: 100px;
+        display: block;
+        padding: 10px;
+        transition: none;
+    }
+
+    main .subject-left img {
+        width: 100%;
+        padding: 8px;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom .5s ease;
+    }
+
+    main .subject-left img:hover {
+        width: 100%;
+    }
+
+    main .subject-left .math img:hover {
+        border-bottom: 2px solid #599bea;
+    }
+
+    main .subject-left .physics img:hover {
+        border-bottom: 2px solid #ef112c;
+    }
+
+    main .subject-left .chemistry img:hover {
+        border-bottom: 2px solid #13ae67;
+    }
+
+    main .subject-right h2 {
+        text-align: center;
+        margin-top: -10px;
+    }
+}
+
 
 /* footer ================================================================================ */
 footer {
@@ -438,6 +540,7 @@ footer .learni span {
     font-weight: 900;
     letter-spacing: 2px;
 }
+
 footer .contact {
     float: right;
 }
@@ -479,8 +582,6 @@ footer .social-media .yt svg {
     }
 }
 
-a, li, p, h1, h2, h3, h4, h5, h6 {
+a, li, p, h1, h2, h3, h4, h5, h6, span {
     font-family: 'Noto Serif Lao', serif;
 }
-
-
