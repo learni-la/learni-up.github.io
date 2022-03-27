@@ -373,6 +373,10 @@ main h3 {
     main .page-hero p {
         font-size: .8rem;
     }
+    
+    main .home h3 {
+        font-size: 1.2rem;
+    }
 }
 
 /* footer ================================================================================ */
