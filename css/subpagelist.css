@@ -316,6 +316,10 @@ main .home h3 {
     font-weight: 900;
 }
 
+main .right .nopermission p {
+    color: red;
+}
+
 .home .sub-home {
     display: flex;
     flex-direction: column;
