@@ -324,7 +324,7 @@ main .home h3 {
 }
 
 .sub-home .exam-type {
-    width: 200px;
+    width: 150px;
     box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
     margin: 5px;
     border-radius: 10px;
@@ -348,8 +348,8 @@ main .home h3 {
 }
 
 .exam-type img {
-    width: 150px;
-    height: 150px;
+    width: 90%;
+    height: 100%;
     display: block;
     margin: 0 auto;
     object-fit: contain;
