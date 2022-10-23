@@ -324,10 +324,19 @@ main .home h3 {
 }
 
 .sub-home .exam-type {
-    width: 45%;
+    width: 180px;
     box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
     margin: 5px;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 454px) {
+    .sub-home .exam-type {
+        width: 45%;
+        box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
+        margin: 5px;
+        border-radius: 10px;
+    }
 }
 
 .exam-type .left {
